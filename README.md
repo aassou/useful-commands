@@ -1,0 +1,3 @@
+# This repo is used to save most used and forgotten commands :)
+
+It has many commands and tricks related to OS, Programming, DB...
