@@ -1,7 +1,13 @@
-# Import a SQL file using the command line in MySQL
+# 1. Import a SQL file using the command line in MySQL
 
 mysql -u username -p database_name < file.sql
 
-# Disable ONLY_FULL_GROUP_BY
+# 2. Disable ONLY_FULL_GROUP_BY
 
 mysql > SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
+
+# 3. Allow remote access to MySQL:
+sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+
+-- Change this line from 127.0.0.1 to 0.0.0.0
+bind-address = 127.0.0.1
