@@ -11,3 +11,7 @@ sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
 
 -- Change this line from 127.0.0.1 to 0.0.0.0
 bind-address = 127.0.0.1
+
+# 4. Reset AutoIncrement
+ALTER TABLE table_name AUTO_INCREMENT = 1;
+

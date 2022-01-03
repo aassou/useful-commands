@@ -16,12 +16,19 @@ php bin/console doctrine:fixtures:load --append
 # Useful packages
 
 composer require liip/imagine-bundle
+
 composer require symfony/uid
+
 composer require api
+
 composer require monolog
+
+composer require --dev orm-fixtures
+
+composer require --dev fzaninotto/faker
+
 composer require --dev easycorp/easy-log-handler
-[
-    configuration of easy-log-handler:
-    
-]
+
+[configuration of easy-log-handler:]
+
 composer require maker
