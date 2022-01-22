@@ -1,7 +1,12 @@
 # PHP Packges and extensions
 sudo apt install php7.4-gd
+
 sudo apt install php7.4-xml
+
 sudo apt install php7.4-mbstring
+
+## Change PHP version
+sudo update-alternatives --config php
 
 # Symfony commands
 

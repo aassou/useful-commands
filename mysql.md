@@ -15,3 +15,10 @@ bind-address = 127.0.0.1
 # 4. Reset AutoIncrement
 ALTER TABLE table_name AUTO_INCREMENT = 1;
 
+# 5. Get size of MySQL database
+SELECT 
+    table_schema "table_name", 
+    ROUND(SUM(data_length + index_length) / 1024 / 1024, 1) "DB Size in MB" 
+FROM information_schema.tables 
+GROUP BY table_schema; 
+
